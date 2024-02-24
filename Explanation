@@ -1,0 +1,49 @@
+1.Header Files and Constants:
+
+The code includes necessary header files like <stdio.h>, <stdlib.h>, and <string.h>.
+Constants like MAX_NAME_LENGTH, MAX_PATIENTS, and FILENAME are defined to specify the maximum length of patient names, maximum number of patients, and the filename for data storage, respectively.
+
+
+2.Patient and Hospital Structures:
+
+The struct Patient defines a patient's attributes: name, age, and gender.
+The struct Hospital contains an array of Patient structures and a count variable to keep track of the number of patients in the hospital.
+
+
+3.Function Definitions:
+
+Functions like addPatient, viewPatients, searchPatient, deletePatient, sortPatients, savePatients, and loadPatients are defined to perform various operations on the hospital's patient data.
+addPatient: Adds a new patient to the hospital's database.
+viewPatients: Displays details of all patients stored in the hospital's database.
+searchPatient: Searches for a patient by name and displays their details if found.
+deletePatient: Deletes a patient from the database based on the given name.
+sortPatients: Sorts the patients in the database alphabetically by name.
+savePatients: Saves the patient data to a file named patients.txt.
+loadPatients: Loads patient data from the file patients.txt into the hospital's database.
+
+
+4.Main Function:
+
+Memory is allocated dynamically for the array of patients using malloc.
+Patient data is loaded from the file at the beginning of the program's execution.
+A menu-driven interface is implemented using a do-while loop to allow users to perform various operations.
+The user's choice is taken as input, and corresponding functions are called to perform the selected operation.
+The program exits when the user chooses the "Exit" option.
+Memory allocated dynamically for the patients is freed before the program exits.
+
+
+5.Explanation of Operations:
+
+Users can add patients, view the list of patients, search for patients by name, delete patients, sort patients alphabetically by name, and save patient data to a file for future use.
+
+
+6.Data Persistence:
+
+Patient data is saved to a file (patients.txt) whenever the user chooses the "Save Patients" option.
+Patient data is loaded from the file at the beginning of the program's execution using the loadPatients function.
+
+***This advanced hospital management system code provides more functionality compared to the basic version. It incorporates file handling for data persistence and dynamic memory allocation for scalability. Additionally, it offers sorting functionality to manage patient data more efficiently.
+
+
+
+
